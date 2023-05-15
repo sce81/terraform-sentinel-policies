@@ -6,7 +6,7 @@
 import "tfplan-functions" as plan
 
 # Max size of an EKS node group
-param max_nodes default 5
+param max_nodes default 2
 
 # Get all EKS Node groups
 allEKSNodeGroups = plan.find_resources("aws_eks_node_group")
