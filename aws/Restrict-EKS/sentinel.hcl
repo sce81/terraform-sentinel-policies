@@ -21,5 +21,5 @@ policy "restrict-eks-node-group-max-size" {
 
 policy "restrict-eks-node-instance-type" {
   source = "./restrict-eks-node-group-instance-type.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "hard-mandatory"
 }
