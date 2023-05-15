@@ -35,10 +35,10 @@ module "aws-functions" {
 #  enforcement_level = "advisory"
 #}
 
-#policy "restrict-current-ec2-instance-type" {
-#  source = "../restrict-current-ec2-instance-type.sentinel"
-#  enforcement_level = "advisory"
-#}
+policy "restrict-current-ec2-instance-type" {
+  source = "../restrict-current-ec2-instance-type.sentinel"
+  enforcement_level = "advisory"
+}
 
 
 policy "restrict-eks-node-group-size" {
