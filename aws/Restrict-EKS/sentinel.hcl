@@ -42,6 +42,11 @@ module "aws-functions" {
 
 
 policy "restrict-eks-node-group-size" {
-  source = "../restrict-eks-node-group-size.sentinel"
+  source = "./restrict-eks-node-group-size.sentinel"
+  enforcement_level = "advisory"
+}
+
+policy "restrict-ec2-instance-type" {
+  source = "../restrict-ec2-instance-type.sentinel"
   enforcement_level = "advisory"
 }
