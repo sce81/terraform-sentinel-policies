@@ -11,7 +11,7 @@ module "tfconfig-functions" {
 }
 
 module "tfrun-functions"{
-  source = "../../common-functions/tfconfig-functions/tfrun-functions.sentinel"
+  source = "../../common-functions/tfrun-functions/tfrun-functions.sentinel"
   }
 
 policy "require-all-resources-from-pmr" {
