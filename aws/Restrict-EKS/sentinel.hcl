@@ -16,7 +16,7 @@ module "aws-functions" {
 
 policy "restrict-eks-node-group-max-size" {
   source = "./restrict-eks-node-group-max-size.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "soft-mandatory"
 }
 
 policy "restrict-eks-node-instance-type" {
