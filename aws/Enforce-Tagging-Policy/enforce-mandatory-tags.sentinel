@@ -11,14 +11,18 @@ import "aws-functions" as aws
 
 # List of resources that are required to have name/value tags
 param resource_types default [
-  "aws_eks_cluster",
+  "aws_vpc",
+  "aws_subnet",
+  "aws_route_table",
+  "aws_nat_gateway",
+  "aws_internet_gateway",
 ]
 
 # List of mandatory tags
 # Note that the tags here are for internal HashiCorp usage
 # You should assign your own tags in a "mandatory_tags" parameter in your policy set
 # Or change the tags here in the policy.
-param mandatory_tags default ["env","owner","region"]
+param mandatory_tags default ["Name","Terraform"]
 
 # Get all AWS Resources with standard tags
 allAWSResourcesWithStandardTags =
