@@ -1,9 +1,9 @@
-#The policy uses the tfplan import to enforce the usage of Terraform version 0.12 or higher
+#The policy uses the tfplan import to enforce the usage of Terraform version 1.8 or higher
 
 import "tfplan/v2" as tfplan
 
 #Minimum allowed version variable
-min_allowed_version = "0.12.0"
+min_allowed_version = "1.8.0"
 violations = 0
 
 #Condition to check version
