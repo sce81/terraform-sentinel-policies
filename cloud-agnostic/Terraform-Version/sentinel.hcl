@@ -16,5 +16,5 @@ module "tfrun-functions"{
 
 policy "terraform-version" {
     source = "./restrict-terraform-versions.sentinel"
-    enforcement_level = "advisory"
+    enforcement_level = "soft-mandatory"
 }
