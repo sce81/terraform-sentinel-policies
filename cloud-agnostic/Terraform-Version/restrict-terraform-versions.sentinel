@@ -3,7 +3,7 @@
 import "tfplan/v2" as tfplan
 
 #Minimum allowed version variable
-min_allowed_version = "1.8.0"
+min_allowed_version = "1.10.0"
 violations = 0
 
 #Condition to check version
