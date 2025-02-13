@@ -14,7 +14,7 @@ module "aws-functions" {
   source = "../aws-functions/aws-functions.sentinel"
 }
 
-policy "enforce-mandatory-tags" {
+policy "enforce-sams-tags" {
   source = "./sam-enforce-mandatory-tags.sentinel"
   enforcement_level = "advisory"
 }
