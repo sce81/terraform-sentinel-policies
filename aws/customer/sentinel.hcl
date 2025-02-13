@@ -20,6 +20,6 @@ policy "check-ec2-environment-tag" {
 }
 
 policy "enforce-mandatory-tags" {
-  source = "../../enforce-mandatory-tags.sentinel"
+  source = "../enforce-mandatory-tags.sentinel"
   enforcement_level = "advisory"
 }
