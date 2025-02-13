@@ -35,9 +35,10 @@ if length(violatingMCs) > 0 and not tfrun.is_destroy {
   }
 }
 
-# Find resources and data sources in root module
+# Find resources in root module
 rootModuleResources = filter tfconfig.resources as address, r {
-  r.module_address is ""
+  r.mode is "managed"
+  #r.module_address is ""
 }
 
 # Print violation messages for root module resources and data sources
