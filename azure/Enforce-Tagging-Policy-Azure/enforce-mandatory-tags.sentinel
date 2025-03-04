@@ -16,6 +16,9 @@ param resource_types default [
   "azurerm_linux_virtual_machine",
   "azurerm_windows_virtual_machine",
   "azurerm_virtual_network",
+  "azurerm_linux_virtual_machine_scale_set",
+  "azurerm_application_security_group",
+  "azurerm_lb",
 ]
 
 # List of mandatory tags
