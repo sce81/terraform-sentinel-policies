@@ -10,7 +10,7 @@ module "tfconfig-functions" {
   source = "../../common-functions/tfconfig-functions/tfconfig-functions.sentinel"
 }
 
-module "aws-functions" {
+module "azure-functions" {
   source = "../azure-functions/azure-functions.sentinel"
 }
 
